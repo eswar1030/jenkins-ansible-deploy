@@ -1,0 +1,10 @@
+---
+- hosts: local
+  gather_facts: yes
+  tasks:
+    - name: Ping test
+      ansible.builtin.ping:
+
+    - name: Display success message
+      ansible.builtin.debug:
+        msg: "Ansible playbook pulled from GitHub and executed via Jenkins!"
