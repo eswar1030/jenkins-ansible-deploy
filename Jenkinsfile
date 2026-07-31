@@ -13,7 +13,7 @@ pipeline {
                 ansiblePlaybook(
                     installation: 'ansible-local',
                     playbook: 'deploy.yml',
-                    inventory: 'inventory/hosts',
+                    inventory: 'inventory'
                     colorized: true
                 )
             }
